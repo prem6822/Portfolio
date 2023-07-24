@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Failure page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&family=Rubik&display=swap" rel="stylesheet">
+    <style>
+      .failure{
+        font-family: "poppins";
+      }
+    </style>
+  </head>
+  <body onload="triggerAlarm()">
+    <div class="failure">
+      <h1>Oops!!</h1>
+      <p>Your attempt to subscribe our newsletter of failed. Please try again.</p>
+      <a href="/"><button> Return To Home << </button></a>
+  </div>
+  </body>
+  <script>
+    function triggerAlarm(){
+      let audio = new Audio("sounds/failure.mp3");
+      audio.play();
+    }
+  </script>
+</html>

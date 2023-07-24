@@ -1,0 +1,422 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    line-height: 1.5;
+    font-family: "poppins";
+}
+
+#particles-js{
+    height: 100vh;
+}
+
+hr{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: rgba(187, 181, 181, 0.2);
+    border-color: rgba(187, 181, 181, 0.2);
+}
+
+body{
+    background-image: url(images/background.jpeg);
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.wrapper{
+    position: absolute;
+}
+
+.navbar{
+    border-radius: 10px;
+    background-color: rgba(187, 181, 181, 0.3);
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 70%;
+    padding: 15px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+.nav_link{
+    text-decoration: none;
+}
+
+.nav_option > a:hover{
+    color: aqua;
+}
+
+.my_details{
+    border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.details > p, .details > h1{
+    margin: 20px;
+}
+
+.photo > img{
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 18px 18px white inset;
+}
+
+#my_projects{
+    margin-top: 200px;
+}
+
+.my_projects_title{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project{
+    background-color: rgba(187, 181, 181, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.project_details, .project_title{
+    text-align: center;
+}
+
+.project_details:hover{
+    color: aqua;
+}
+
+.project_title:hover{
+    text-decoration: underline;
+    cursor: grab;
+}
+
+#my_skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.my_skills_title{
+    margin-bottom: 100px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.skills > p{
+    text-align: center;
+    background-color: rgba(187, 181, 181, 0.1);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.skills > p:hover{
+    color: aqua;
+}
+
+#newsletter{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(243, 160, 5,0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 20px;
+    flex: 0.5;
+}
+
+.newsletter_inputs > form{
+    display: flex;
+    gap: 40px;
+}
+
+.newsletter_inputs > form > input[type = "text"],
+.newsletter_inputs > form > input[type = "email"]
+{
+    /* height: 30px; */
+    background-color: rgba(47,48,49,0);
+    border: 0px;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+    font-size: medium;
+}
+
+.newsletter_inputs > form > input[type = "text"]::placeholder,
+.newsletter_inputs > form > input[type = "email"]::placeholder{
+    /* color: black; */
+    font-size: medium;
+}
+
+.newsletter_inputs > form > input[type = "text"]:focus::placeholder,
+.newsletter_inputs > form > input[type = "email"]:focus::placeholder{
+    color: transparent;
+}
+
+.newsletter_inputs > form > input[type = "text"]:focus,
+.newsletter_inputs > form > input[type = "email"]:focus{
+    outline: none;
+}
+
+
+#my_contact{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 37px;
+    background-color: rgb(39, 42, 46);
+}
+
+#contact_details{
+    width: 50%;
+}
+
+.contact_option{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 50px;
+}
+
+.contact_option > img{
+    width: 28px;
+    height: 28px;
+    background-color: orange;
+    border-radius: 7px;
+}
+
+.hr_div > hr{
+    margin-top: 70px;
+    width: 100%;
+}
+
+.contact_link:hover{
+    text-decoration: underline;
+}
+
+.project:hover{
+    box-shadow: 0 4px 15px 0 rgba(52, 53, 43, 0.75);
+}
+
+.hide{
+    display: none;
+}
+
+.failure, .success{
+    background-color: rgba(187, 181, 181, 0.2);
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter_inputs > form > input[type = "submit"], .failure > a  > button, .success > a  > button{
+    background-color: orange;
+    padding:5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.failure > a > button, .success > a  > button{
+    width: fit-content;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright{
+    text-align: center;
+    background-color: rgb(39, 42, 46);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav_option:hover, .project:hover,
+.newsletter_inputs > form > input[type = "submit"]:hover,
+.skills > p:hover,
+.project_title:hover,
+#newsletter:hover,
+.failure > a  > button:hover,
+.success > a  > button:hover{
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+}
+
+*:nth-child(2){
+    transition-delay: 200ms;
+}
+
+*:nth-child(3){
+    transition-delay: 400ms;
+}
+
+*:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(max-width: 1100px){
+    .newsletter_inputs > form{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #newsletter{
+        gap: 20px;
+    }
+    /* #particles-js{
+        height: 350vh;
+    } */
+}
+
+@media(max-width: 992px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    /* #particles-js{
+        height: 400vh;
+    } */
+}
+
+@media(max-width: 768px){
+    .projects{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .my_details{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .details{
+        text-align: center;
+    }
+    .skills{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    /* #particles-js{
+        height: 500vh;
+    } */
+}
+
+@media(max-width: 576px){
+    .skills{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .contact_option > img{
+        width: 20px;
+        height: 20px;
+    }
+    .contact_option{
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+    }
+
+    .contact_title{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* #particles-js{
+        height: 550vh;
+    } */
+    .details{
+        font-size: small;
+    }
+}
+
+@media(max-width: 480px) {
+    .skills{
+        grid-template-columns: 1fr 1fr;
+    }
+    #my_contact{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+    .contact_option{
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    /* #particles-js{
+        height: 600vh;
+    } */
+
+    .nav_option{
+        font-size: small;
+    }
+
+}
+

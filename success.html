@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>success page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&family=Rubik&display=swap" rel="stylesheet">
+    <style>
+      .success{
+        font-family: "poppins";
+      }
+    </style>
+  </head>
+  <body onload="triggerAlarm()">
+    <div class="success">
+      <h1>Awesome!!</h1>
+      <p>You are now successfully subscribed to our newsletter.</p>
+      <a href="/"><button id="returnToHome"> Return To Home << </button></a>
+    </div>
+  </body>
+  <script>
+    function triggerAlarm(){
+      let audio = new Audio("sounds/success.mp3");
+      audio.play();
+    }
+  </script>
+</html>
